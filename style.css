@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color:gray;
+    font-family: 'karla';
+    background-color:hsl(148, 38%, 91%);
+
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width:376px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.textEntry,.messageBox,.queryBox, button{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+}
+
+.textEntry{
+    margin-bottom: 10px;
+    
+}
+
+.Name{
+    width: 96%;
+}
+.messageBox{
+    height: 120px;
+    margin: 10px  0px;
+}
+
+.queryBox{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.queryBox input{
+    margin: 2px 15px;
+}
+
+.queryBox:has(input[type='radio']:checked){
+    background-color:hsla(169, 72%, 89%, 0.95);
+}
+
+input[type='radio']:checked{
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.checkBox{
+    margin-right: 10px;
+}
+
+input[type='checkbox']:checked{
+    accent-color: hsl(169, 82%, 27%);
+}
+
+button{
+    height:35px ;
+    color:  hsl(148, 38%, 91%);
+    background:  hsl(169, 82%, 27%);
+    border: none;
+    margin: 10px;
+    font-size: 1rem;
+}
+button:hover{
+    background-color:hsla(167, 85%, 10%, 0.829);
+    transition: 0.2s ease;
+    scale: 1.01;
+}
+h4{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.checkBox,.queryBox,button,.textEntry,.consent,.messageBox{
+    cursor: pointer;
+}
+
+
+#firstName, #lastName, 
+#emailAddress,#querySection,
+ #message, #checkBox,
+ #validEmailAddress{
+    color: hsl(0, 66%, 54%);
+    margin: 5px;
+}
+
+.errorAlert{
+    display:none;
+}
+.borderHover{
+    outline: none;
+}
+.borderHover:hover{
+    border: 1.95px solid hsl(169, 82%, 27%);
+    transition: 4ms ease;
+}
+
+.borderHover:focus{
+    border:2px solid hsl(169, 82%, 27%);
+    transition: 4ms ease;
+}
+
+.hidden{
+    display: none;
+}
+
+#customAlert{
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: hsla(169, 87%, 15%, 0.986); 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: top 0.5s ease-in-out;
+    z-index: 1000;
+    text-align: center;
+}
+
+#customAlert.show{
+    top: 20px;
+}
+
+.notifyed{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+img{
+    margin: -5px;
+    margin-right: 7px;
+}
+
+@media (min-width:928px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainForm{
+        display: flex;
+        width: 45%;
+        margin-top: 40px;
+
+    }
+
+    .clientName,.querySection{
+        display: flex;
+        justify-content:space-between;
+
+    }
+
+    .subSection{
+        width: 48%;
+    }
+
+    .queryBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45.5%;
+        font-size: 0.95rem;
+    }
+
+    
+    .messageBox{
+        height: 100px;
+    }
+    
+}

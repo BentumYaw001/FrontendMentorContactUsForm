@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="customAlert" class="hidden">
+    <p id="alertMessage">
+        <p class="notifyed">
+          <img src="assets/images/icon-success-check.svg" alt=""> Message Sent!
+        </p>
+         
+        <p>
+          Thank you for completing the form,
+           we will be in touch soon.
+        </p>
+    </p>
+  </div>
+  <div class="mainForm">
+      <!-- contact us -->
+        <h4>
+        Contact Us
+       </h4>
+
+       <!-- personal info section -->
+       <div class="clientName">
+          <div class="subSection">
+            <label for="">First Name *</label>
+            <input type="text" required class="textEntry Name borderHover" id="nameSpace1">
+             <p class="errorAlert " id="firstName"> This field  is required</p>
+          </div>
+
+          <div class="subSection">
+            <label for="">Last Name *</label>
+            <input type="text" required class="textEntry Name borderHover" id="nameSpace2"> 
+            <p class="errorAlert" id="lastName">This field is required</p>
+          </div>
+       
+      </div>
+       
+        <label for="">Email Address *</label>
+        <input type="email" required class="textEntry borderHover" id="emailSpace" required>
+        <p class="errorAlert" id="emailAddress">This field is required</p>
+        <p class="errorAlert" id="validEmailAddress">please, enter a valid email address</p>
+
+
+       
+       
+       <!-- query request section -->
+       <label for="">Query Type *</label>
+       <div class="querySection">
+        <div class="queryBox borderHover">
+          <div> <input type="radio" name="option" value="1"  class="checkBox" id="sQuery">General Enquiry</div>
+         </div>
+         <div class="queryBox borderHover">
+          <div><input type="radio" name="option" value="2" class="checkBox" id="gQuery">Support Request</div> 
+         </div>
+       </div>
+       <p class="errorAlert" id="querySection">please, select a query type.</p>
+    
+        <!-- message section -->
+        <label for="">message *</label>
+        <textarea  name="" placeholder="start typing..." class="messageBox borderHover" required id="messageSpace"></textarea>
+        <p class="errorAlert" id="message">This field is required</p>
+
+         <!-- consent section -->
+         <div class="consent"><input type="checkbox" name="" class="checkBox" id="checkSpace" required>I consent to being Contacted by the team *</div>
+            <p class="errorAlert" id="checkBox">To submit this form, please consent to being contacted.</p>
+          <!-- submit button -->
+          <button id="submitButton" onclick="submitButton()">Submit</button>
+   </div>
+</body>
+
+  <script src="script.js"></script>
+</html>
