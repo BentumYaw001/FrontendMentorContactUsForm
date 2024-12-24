@@ -20,7 +20,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    width:376px;
+    width:300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -28,7 +28,7 @@ body{
     border: 1px solid gray;
     border-radius: 5px;
     padding: 5px;
-    height: 40px;
+    height: 30px;
 }
 
 .textEntry{
@@ -71,7 +71,7 @@ input[type='checkbox']:checked{
 }
 
 button{
-    height:35px ;
+    height:45px ;
     color:  hsl(148, 38%, 91%);
     background:  hsl(169, 82%, 27%);
     border: none;
